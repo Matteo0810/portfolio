@@ -1,0 +1,26 @@
+$icons: (
+  "download", "book", "link", "arrow-right",
+  "javascript", "typescript", "nodejs", "reactjs",
+  "expressjs", "html", "css", "php", "mongodb",
+  "mysql", "postegresql", "java", "c", "adobexd",
+  "figma", "gitlab", "github", "jetbrain", "vscode",
+  "arrow-down", "arrow-right", "times", "download-reversed"
+);
+
+$icon-size: 20px;
+
+.icon {
+  display: block;
+  width: $icon-size;
+  height: $icon-size;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@each $icon in $icons {
+  .icon.#{$icon} {
+    background-image: url("../icons/#{$icon}.svg");
+  }
+}

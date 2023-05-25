@@ -1,0 +1,698 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("../fonts/montserrat-medium.ttf");
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("../fonts/montserrat-regular.ttf");
+}
+@font-face {
+  font-family: "prozalibre-medium";
+  src: url("../fonts/prozalibre-medium.ttf");
+}
+@font-face {
+  font-family: "prozalibre-regular";
+  src: url("../fonts/prozalibre-regular.ttf");
+}
+@font-face {
+  font-family: "prozalibre-semibold";
+  src: url("../fonts/prozalibre-semibold.ttf");
+}
+.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon.download {
+  background-image: url("../icons/download.svg");
+}
+
+.icon.book {
+  background-image: url("../icons/book.svg");
+}
+
+.icon.link {
+  background-image: url("../icons/link.svg");
+}
+
+.icon.arrow-right {
+  background-image: url("../icons/arrow-right.svg");
+}
+
+.icon.javascript {
+  background-image: url("../icons/javascript.svg");
+}
+
+.icon.typescript {
+  background-image: url("../icons/typescript.svg");
+}
+
+.icon.nodejs {
+  background-image: url("../icons/nodejs.svg");
+}
+
+.icon.reactjs {
+  background-image: url("../icons/reactjs.svg");
+}
+
+.icon.expressjs {
+  background-image: url("../icons/expressjs.svg");
+}
+
+.icon.html {
+  background-image: url("../icons/html.svg");
+}
+
+.icon.css {
+  background-image: url("../icons/css.svg");
+}
+
+.icon.php {
+  background-image: url("../icons/php.svg");
+}
+
+.icon.mongodb {
+  background-image: url("../icons/mongodb.svg");
+}
+
+.icon.mysql {
+  background-image: url("../icons/mysql.svg");
+}
+
+.icon.postegresql {
+  background-image: url("../icons/postegresql.svg");
+}
+
+.icon.java {
+  background-image: url("../icons/java.svg");
+}
+
+.icon.c {
+  background-image: url("../icons/c.svg");
+}
+
+.icon.adobexd {
+  background-image: url("../icons/adobexd.svg");
+}
+
+.icon.figma {
+  background-image: url("../icons/figma.svg");
+}
+
+.icon.gitlab {
+  background-image: url("../icons/gitlab.svg");
+}
+
+.icon.github {
+  background-image: url("../icons/github.svg");
+}
+
+.icon.jetbrain {
+  background-image: url("../icons/jetbrain.svg");
+}
+
+.icon.vscode {
+  background-image: url("../icons/vscode.svg");
+}
+
+.icon.arrow-down {
+  background-image: url("../icons/arrow-down.svg");
+}
+
+.icon.arrow-right {
+  background-image: url("../icons/arrow-right.svg");
+}
+
+.icon.times {
+  background-image: url("../icons/times.svg");
+}
+
+.icon.download-reversed {
+  background-image: url("../icons/download-reversed.svg");
+}
+
+html, body {
+  color: #132834;
+  font-size: 1em;
+  font-family: "montserrat-regular", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "prozalibre-semibold", sans-serif;
+}
+
+h1 {
+  font-size: 2.3333333333em;
+}
+
+h2 {
+  font-size: 1.5625em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0.8em 1em;
+  font-family: "montserrat-regular", sans-serif;
+  cursor: pointer;
+  border: unset;
+  border-radius: 100px;
+  background-color: #132834;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+button > .icon {
+  margin-left: 1em;
+}
+
+header {
+  height: 6em;
+}
+header > nav > ul {
+  float: right;
+  margin: 2em;
+}
+header > nav > ul > li {
+  display: inline-block;
+  margin: 1em;
+}
+header > nav > ul > li > a {
+  color: #132834;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header > nav > ul > li > a:hover {
+  color: #456CB0;
+}
+header > nav > ul > li:last-of-type > a {
+  background-color: #132834;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+}
+header > nav > ul > li:last-of-type > a:hover {
+  background-color: #456CB0;
+}
+
+footer {
+  background-color: #132834;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+#home > .header > .shapes {
+  background-image: url(../shapes/top-shapes.svg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+}
+#home > .header > .center {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10em 0;
+  margin-bottom: 20em;
+  width: 100%;
+  text-align: center;
+}
+#home > .header > .center > h1 {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+#home > .header > .center > h1 > .highlight {
+  background-color: #82C6EC;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+#home > .header > .center > h2 {
+  font-family: "prozalibre-medium", sans-serif;
+}
+#home > .header > .center > aside {
+  margin-top: 5em;
+}
+#home > .header > .center > aside > h4 {
+  font-family: "prozalibre-regular", sans-serif;
+  margin-bottom: 1em;
+}
+#home > .header > .center > aside > a > button {
+  margin: 0 auto;
+}
+
+#home > section > h1,
+#home > article > h1 {
+  text-align: center;
+  margin: 2em;
+}
+#home > section > p,
+#home > article > p {
+  text-align: justify;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#home > article#a-propos {
+  margin-top: -10em;
+}
+
+#home > section#formation {
+  position: relative;
+}
+#home > section#formation > .shapes {
+  width: 18.9em;
+  height: 33em;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url(../shapes/formation_shapes.svg);
+  background-size: cover;
+  background-position: center;
+}
+#home > section#formation > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#home > section#formation > section > section > article {
+  background-color: #F1F1F1;
+  border-radius: 14px;
+  margin: 2em 0;
+  padding: 1.5em 2.5em;
+}
+#home > section#formation > section > section > article > ul {
+  margin: 1em 1.5em 2em;
+}
+#home > section#formation > section > section > article > a {
+  display: inline-block;
+}
+#home > section#formation > section > section > article > a:first-of-type {
+  margin-right: 10px;
+}
+#home > section#formation > section > .periods {
+  position: relative;
+}
+#home > section#formation > section > .periods > .date {
+  position: absolute;
+  left: -10em;
+  background-color: #F1F1F1;
+  border-radius: 100px;
+  padding: 0.7em 1em;
+  font-family: "montserrat-medium", sans-serif;
+}
+#home > section#formation > section > .periods > .date.completed {
+  background-color: #132834;
+  color: white;
+}
+#home > section#formation > section > .periods > .date.completed::before {
+  background-color: #132834;
+}
+#home > section#formation > section > .periods > .date:last-of-type::before {
+  top: -8em;
+}
+#home > section#formation > section > .periods > .date::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+  width: 15px;
+  height: 10em;
+  background-color: #F1F1F1;
+  border-radius: 14px;
+}
+#home > section#formation > section > .periods > .date:nth-of-type(1) {
+  top: 23%;
+}
+#home > section#formation > section > .periods > .date:nth-of-type(2) {
+  bottom: 23%;
+}
+
+#home > section#competences {
+  position: relative;
+}
+#home > section#competences > .shapes {
+  width: 20em;
+  height: 55em;
+  z-index: -1;
+  position: absolute;
+  bottom: -12em;
+  left: 0;
+  background-image: url(../shapes/skills_shapes.svg);
+  background-size: cover;
+  background-position: center;
+}
+#home > section#competences > section {
+  margin-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#home > section#competences > section > section:first-of-type {
+  margin-right: 5em;
+}
+#home > section#competences > section > section > section > h3 {
+  margin: 1em 0;
+}
+#home > section#competences > section > section > section > ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+#home > section#competences > section > section > section > ul > li {
+  font-family: "prozalibre-semibold", sans-serif;
+  font-size: 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5em 1em;
+}
+#home > section#competences > section > section > section > ul > li > .icon {
+  margin-right: 1em;
+  width: 30px;
+  height: 30px;
+}
+
+#home > aside#contact {
+  background-color: #132834;
+}
+#home > aside#contact > nav {
+  padding: 2em;
+}
+#home > aside#contact > nav > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#home > aside#contact > nav > ul > li:nth-child(2) > a {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.2em;
+}
+#home > aside#contact > nav > ul > li:nth-child(2) > a:hover {
+  border-color: #82C6EC;
+}
+#home > aside#contact > nav > ul > li > a {
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#home > aside#contact > nav > ul > li > a:hover {
+  color: #82C6EC;
+}
+
+.tmp-animation-element {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #132834;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  width: 500vh;
+  height: 500vh;
+}
+.tmp-animation-element.open {
+  -webkit-animation: tmp-animation-open 2s forwards;
+          animation: tmp-animation-open 2s forwards;
+}
+.tmp-animation-element.close {
+  -webkit-animation: tmp-animation-close 1s forwards;
+          animation: tmp-animation-close 1s forwards;
+}
+@-webkit-keyframes tmp-animation-open {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 500vh;
+    height: 500vh;
+  }
+}
+@keyframes tmp-animation-open {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 500vh;
+    height: 500vh;
+  }
+}
+@-webkit-keyframes tmp-animation-close {
+  from {
+    width: 500vh;
+    height: 500vh;
+  }
+  to {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes tmp-animation-close {
+  from {
+    width: 500vh;
+    height: 500vh;
+  }
+  to {
+    width: 0;
+    height: 0;
+  }
+}
+
+#project-details {
+  background-color: #132834;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+#project-details > .close {
+  position: absolute;
+  top: 4em;
+  right: 4em;
+  border: 1px solid white;
+  padding: 1em 1em;
+}
+#project-details > .close > .icon {
+  margin-left: unset;
+}
+#project-details > * {
+  color: white;
+}
+#project-details > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 11em 4em 3em;
+  -webkit-animation: appear 0.3s forwards;
+          animation: appear 0.3s forwards;
+}
+#project-details > div > article {
+  margin-right: 3em;
+}
+#project-details > div > article > h1 {
+  font-size: 3.125em;
+}
+#project-details > div > article > h2 {
+  font-size: 2em;
+}
+#project-details > div > article > h3 {
+  font-size: 1.5625em;
+  margin: 1em 0;
+}
+#project-details > div > article > ul {
+  list-style: none;
+}
+#project-details > div > article > ul:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#project-details > div > article > ul:last-of-type > li {
+  margin: 0.5em;
+}
+#project-details > div > article > ul > li > span {
+  font-family: "montserrat-medium", sans-serif;
+}
+#project-details > div > article > ul > li > a > button {
+  background-color: white;
+  color: #132834;
+}
+#project-details > div > div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 14px;
+}
+#project-details > div > div > img {
+  width: 35em;
+  height: 22em;
+}
+#project-details > div > div > div {
+  margin-top: 1em;
+}
+#project-details > div > div > div > img {
+  width: 7em;
+  height: 5em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#project-details > div > div > div > img:hover {
+  opacity: 80%;
+}
+#project-details > div > div > div > img:not(:last-of-type) {
+  margin-right: 1em;
+}
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#projects > .header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+#projects > .header > h1 {
+  text-align: center;
+}
+#projects > .header > label {
+  position: relative;
+  cursor: pointer;
+  margin: 1em auto auto;
+}
+#projects > .header > label > select {
+  border: 3px solid #132834;
+  border-radius: 100px;
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20em;
+  cursor: pointer;
+}
+#projects > .header > label > select:focus {
+  outline: none;
+}
+#projects > .header > label > .icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+}
+#projects > section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 10em 3em;
+}
+#projects > section > article {
+  background-color: #F1F1F1;
+  border-radius: 14px;
+  position: relative;
+  margin: 1em;
+  padding: 1em 2em 4em;
+}
+#projects > section > article > h4 {
+  font-family: "montserrat-regular", sans-serif;
+  margin-bottom: 1em;
+}
+#projects > section > article > button {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}

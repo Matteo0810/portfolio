@@ -1,0 +1,22 @@
+@import "../utils/variables.scss";
+
+button {
+
+  padding: .8em 1em;
+  font-family: "montserrat-regular", sans-serif;
+  cursor: pointer;
+
+  border: unset;
+  border-radius: $radius--default;
+
+  background-color: $color--black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  &>.icon {
+    margin-left: 1em;
+  }
+
+}

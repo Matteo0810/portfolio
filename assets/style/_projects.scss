@@ -1,0 +1,245 @@
+@import "utils/variables.scss";
+
+.tmp-animation-element {
+  position: absolute;
+  z-index: 99;
+
+  top: 0;
+  left: 0;
+
+  background-color: $color--black;
+
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+
+  $width: 500vh;
+  $height: 500vh;
+
+  width: $width;
+  height: $height;
+
+  &.open {
+    animation: tmp-animation-open 2s forwards;
+  }
+  &.close {
+    animation: tmp-animation-close 1s forwards;
+  }
+
+  @keyframes tmp-animation-open {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: $width;
+      height: $height;
+    }
+  }
+
+  @keyframes tmp-animation-close {
+    from {
+      width: $width;
+      height: $height;
+    }
+    to {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+#project-details {
+  background-color: $color--black;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 99;
+
+  &>.close {
+    position: absolute;
+    top: 4em;
+    right: 4em;
+
+    border: 1px solid $color--white;
+    padding: 1em 1em;
+
+    &>.icon {
+      margin-left: unset;
+    }
+  }
+
+  &>* {
+    color: $color--white;
+  }
+
+  &>div {
+    display: flex;
+    justify-content: center;
+
+    margin: 11em 4em 3em;
+    animation: appear .3s forwards;
+
+    &>article {
+      margin-right: 3em;
+
+      &>h1 {
+        font-size: $font--size--50;
+      }
+
+      &>h2 {
+        font-size: $font--size--30;
+      }
+
+      &>h3 {
+        font-size: $font--size--25;
+        margin: 1em 0;
+      }
+
+      &>ul {
+        list-style: none;
+
+        &:last-of-type {
+          display: flex;
+          flex-wrap: wrap;
+
+          &>li {
+            margin: .5em;
+          }
+        }
+
+        &>li {
+          &>span {
+            font-family: "montserrat-medium", sans-serif;
+          }
+
+          &>a>button {
+            background-color: $color--white;
+            color: $color--black;
+          }
+        }
+      }
+
+    }
+
+    &>div {
+      & img {
+        object-fit: cover;
+        border-radius: $radius--variation--1;
+      }
+
+      &>img {
+        width: 35em;
+        height: 22em;
+      }
+
+      &>div {
+        margin-top: 1em;
+
+        &>img {
+          width: 7em;
+          height: 5em;
+
+          cursor: pointer;
+          transition: all .3s ease;
+
+          &:hover {
+            opacity: 80%;
+          }
+
+          &:not(:last-of-type) {
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+#projects {
+
+  &>.header {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 3em;
+    margin-bottom: 2em;
+
+    &>h1 {
+      text-align: center;
+    }
+
+    &>label {
+      position: relative;
+      cursor: pointer;
+      margin: 1em auto auto;
+
+      &>select {
+        border: 3px solid $color--black;
+        border-radius: $radius--default;
+
+        font-family: "montserrat-medium", sans-serif;
+        font-size: $font--size--16;
+        padding: .5em 1em;
+
+        appearance: none;
+        width: 20em;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &>.icon {
+        position: absolute;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        right: 20px;
+      }
+    }
+  }
+
+  &>section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin: 0 10em 3em;
+
+    &>article {
+      background-color: $color--gray;
+      border-radius: $radius--variation--1;
+      position: relative;
+
+      margin: 1em;
+
+      padding: 1em 2em 4em;
+
+      &>h4 {
+        font-family: "montserrat-regular", sans-serif;
+        margin-bottom: 1em;
+      }
+
+      &>button {
+        position: absolute;
+        right: 1em;
+        bottom: 1em;
+      }
+    }
+  }
+}

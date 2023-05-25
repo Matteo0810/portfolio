@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/style/main.css" type="text/css">
+
+    <title>Projets - Mattéo Gaillard</title>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="header navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="index.html#a-propos">À propos</a>
+                </li>
+                <li>
+                    <a href="index.html#formation">Formation</a>
+                </li>
+                <li>
+                    <a href="index.html#competences">Compétences</a>
+                </li>
+                <li>
+                    <a href="#">Projets</a>
+                </li>
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="projects">
+        <div class="header">
+            <h1>Mes projets de BUT Informatique</h1>
+
+            <label for="skills">
+                <select id="skills">
+                    <option value="all">Toutes les compétences</option>
+                    <option value="1">1 - Réaliser un développement d'application</option>
+                    <option value="2">2 - Optimiser des applications informatiques</option>
+                    <option value="3">3 - Administrer des systèmes informatiques communicants</option>
+                    <option value="4">4 - Gérer des données de l'information</option>
+                    <option value="5">5 - Conduire un projet</option>
+                    <option value="6">6 - Travailler dans une équipe informatique</option>
+                </select>
+                <span class="icon arrow-down"></span>
+            </label>
+        </div>
+
+        <section id="project-list"></section>
+    </main>
+
+    <footer>
+        &copy; Mattéo Gaillard - 2023 | Tous droits réservés
+    </footer>
+
+    <script defer src="assets/scripts/utils.js"></script>
+    <script defer src="assets/scripts/projects_index.js"></script>
+    <script defer src="assets/scripts/projects_details.js"></script>
+    <script defer src="assets/scripts/projects_filter.js"></script>
+
+</body>
+</html>

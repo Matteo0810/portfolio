@@ -1,0 +1,49 @@
+@import "utils/variables.scss";
+
+header {
+  height: 6em;
+
+  &>nav {
+    &>ul {
+      float: right;
+      margin: 2em;
+
+      &>li {
+        display: inline-block;
+        margin: 1em;
+
+        &>a {
+          color: $color--black;
+          transition: all .3s ease;
+
+          &:hover {
+            color: $color--blue--2;
+          }
+        }
+
+        &:last-of-type {
+          &>a {
+            background-color: $color--black;
+            color: $color--white;
+            padding: .5em 1em;
+
+            border-radius: $radius--default;
+
+            &:hover {
+              background-color: $color--blue--2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+footer {
+  background-color: $color--black;
+  color: $color--white;
+
+  text-align: center;
+  padding: 2em;
+}

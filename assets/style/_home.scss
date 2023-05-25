@@ -1,0 +1,281 @@
+@import "utils/variables.scss";
+
+#home>.header {
+
+  &>.shapes {
+    background-image: url(../shapes/top-shapes.svg);
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 120%;
+
+    z-index: -1;
+  }
+
+  &>.center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10em 0;
+    margin-bottom: 20em;
+
+    width: 100%;
+
+    text-align: center;
+
+    &>h1 {
+      position: relative;
+      margin-bottom: .5em;
+
+      &>.highlight {
+        background-color: $color--blue--1;
+        padding: 5px 10px;
+        border-radius: $radius--default;
+      }
+    }
+
+    &>h2 {
+      font-family: "prozalibre-medium", sans-serif;
+    }
+
+    &>aside {
+      margin-top: 5em;
+
+      &>h4 {
+        font-family: "prozalibre-regular", sans-serif;
+        margin-bottom: 1em;
+      }
+
+      &>a>button {
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+
+#home>section,
+#home>article {
+
+  &>h1 {
+    text-align: center;
+    margin: 2em;
+  }
+
+  &>p {
+    text-align: justify;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+}
+
+#home>article#a-propos {
+  margin-top: -10em;
+}
+
+#home>section#formation {
+  position: relative;
+
+  &>.shapes {
+    width: 18.9em;
+    height: 33em;
+
+    z-index: -1;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-image: url(../shapes/formation_shapes.svg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &>section {
+    display: flex;
+    justify-content: center;
+
+    &>section {
+      &>article {
+        background-color: $color--gray;
+        border-radius: $radius--variation--1;
+
+        margin: 2em 0;
+        padding: 1.5em 2.5em;
+
+        &>ul {
+          margin: 1em 1.5em 2em;
+        }
+
+        &>a {
+          display: inline-block;
+
+          &:first-of-type {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &>.periods {
+      position: relative;
+
+      &>.date {
+        position: absolute;
+        left: -10em;
+
+        background-color: $color--gray;
+        border-radius: $radius--default;
+
+        padding: .7em 1em;
+        font-family: "montserrat-medium", sans-serif;
+
+        &.completed {
+          background-color: $color--black;
+          color: white;
+
+          &::before {
+            background-color: $color--black;
+          }
+        }
+
+        &:last-of-type::before {
+          top: -8em;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+
+          position: absolute;
+          top: 0;
+          left: 50%;
+
+          transform: translateX(-50%);
+          z-index: -1;
+
+          width: 15px;
+          height: 10em;
+
+          background-color: $color--gray;
+          border-radius: $radius--variation--1;
+        }
+
+        &:nth-of-type(1) {
+          top: 23%;
+        }
+        &:nth-of-type(2) {
+          bottom: 23%;
+        }
+      }
+    }
+  }
+}
+
+#home>section#competences {
+  position: relative;
+
+  &>.shapes {
+    width: 20em;
+    height: 55em;
+
+    z-index: -1;
+
+    position: absolute;
+    bottom: -12em;
+    left: 0;
+
+    background-image: url(../shapes/skills_shapes.svg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &>section {
+    margin-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &>section {
+      &:first-of-type {
+        margin-right: 5em;
+      }
+
+      &>section {
+        & > h3 {
+          margin: 1em 0;
+        }
+
+        & > ul {
+          list-style: none;
+
+          display: grid;
+          justify-content: space-between;
+          grid-template-columns: 1fr 1fr;
+
+          & > li {
+            font-family: "prozalibre-semibold", sans-serif;
+            font-size: $font--size--20;
+
+            display: flex;
+            align-items: center;
+
+            margin: .5em 1em;
+
+            & > .icon {
+              margin-right: 1em;
+
+              $size: 30px;
+              width: $size;
+              height: $size;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#home>aside#contact {
+  background-color: $color--black;
+
+  &>nav {
+    padding: 2em;
+
+    &>ul {
+      list-style: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      &>li {
+        &:nth-child(2)>a {
+          border-bottom: 1px solid $color--white;
+          padding-bottom: .2em;
+
+          &:hover {
+            border-color: $color--blue--1;
+          }
+        }
+
+        &>a {
+          color: $color--white;
+          transition: all .3s ease;
+
+          &:hover {
+            color: $color--blue--1;
+          }
+        }
+      }
+    }
+  }
+}
