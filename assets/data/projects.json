@@ -1,0 +1,329 @@
+[
+  {
+    "title": "Puissance 4",
+    "subtitle": "SAE 1.01: Implémentation",
+    "options": {
+      "school_project": true,
+      "associated_with": 1
+    },
+    "steps": [
+      "Maquette",
+      "Cahier des tests",
+      "Algorithme et décomposition",
+      "Code source",
+      "Traces d'exécution",
+      "Documentation"
+    ],
+    "skills": [
+      {
+        "skill": "AC 11.01",
+        "label": "Implémenter des conceptions simples"
+      },
+      {
+        "skill": "AC 11.03",
+        "label": "Faire des essais et évaluer leurs résultats en regard des spécifications"
+      }
+    ],
+    "path": "sae/101",
+    "screens": [
+      {
+        "legend": "Maquette du puissance 4",
+        "src": "maquette.png"
+      },
+      {
+        "legend": "Algorithme principal en pseudo-code",
+        "src": "algo.png"
+      },
+      {
+        "legend": "Extrait du cahier de test",
+        "src": "cahier_de_test.png"
+      },
+      {
+        "legend": "Extrait de la documentation",
+        "src": "documentation.png"
+      },
+      {
+        "legend": "Extrait du code source en C",
+        "src": "source_code.png"
+      },
+      {
+        "legend": "Exemple de trace d'éxécution",
+        "src": "trace_dexecution.png"
+      }
+    ],
+    "deliverables": [
+      "maquette.pdf",
+      "cahier_de_test.ods",
+      "algorithme_et_decomposition.pdf",
+      "code_source.c",
+      "trace_dexecution.ods",
+      "documentation.rtf"
+    ]
+  },
+  {
+    "title": "Problème du tour du cavalier",
+    "subtitle": "SAE 2.02: Exploitation algorithmique",
+    "options": {
+      "school_project": true,
+      "associated_with": 2
+    },
+    "steps": [
+      "Brève étude de trois problèmes (problème du cavalier, des huits dames, du postier chinois).",
+      "Choix du problème par équipe et étude d'algorithmes correspondants (backtracking etc).",
+      "Mise en œuvre de la solution retenue. et étude des limitations. Généralisation à des dimensions supérieures.\n",
+      "Rapport d'étude et présentation orale de la mise en œuvre."
+    ],
+    "skills": [
+      {
+        "skill": "AC 12.01",
+        "label": "Analyser un problème avec méthode."
+      },
+      {
+        "skill": "AC 12.02",
+        "label": "Comparer des algorithmes pour des problèmes classiques."
+      },
+      {
+        "skill": "AC 12.03",
+        "label": "Formaliser et mettre en œuvre des outils mathématiques pour l’informatique."
+      }
+    ],
+    "path": "sae/202",
+    "screens": [
+      {
+        "legend": "Tableau des matières du compte rendu",
+        "src": "compte_rendu.png"
+      },
+      {
+        "legend": "Extrait du code source",
+        "src": "source_code.png"
+      },
+      {
+        "legend": "Sommaire de la soutenance",
+        "src": "soutenance.png"
+      }
+    ],
+    "deliverables": [
+      "code_source.zip",
+      "compte_rendu.pdf",
+      "soutenance.pdf"
+    ]
+  },
+  {
+    "title": "Installation d’un poste pour le développement",
+    "subtitle": "SAE 1.03: Installation d'un poste",
+    "options": {
+      "school_project": true,
+      "associated_with": 3
+    },
+    "steps": [
+      "Identifier les outils nécessaires.",
+      "Préparation des fichiers de test (donnés et configs).",
+      "Proposition d'un workflow enchaînant les outils.",
+      "Production finale et \"scriptage\" du workflow."
+    ],
+    "skills": [
+      {
+        "skill": "AC 13.01",
+        "label": "Identifier les différents composants (matériels et logiciels) d'un système numérique."
+      },
+      {
+        "skill": "AC 13.02",
+        "label": "Utiliser les fonctionnalités de base d'un système multitâches / multiutilisateurs."
+      },
+      {
+        "skill": "AC 13.03",
+        "label": "Installer et configurer un système d'exploitation et des outils de développement."
+      }
+    ],
+    "path": "sae/103",
+    "screens": [
+      {
+        "legend": "Fichier PDF généré",
+        "src": "pdf_genere.png"
+      },
+      {
+        "legend": "Fichier de configuration",
+        "src": "region_config.png"
+      },
+      {
+        "legend": "Morceau d'un script de la chaîne de génération",
+        "src": "source.png"
+      }
+    ],
+    "deliverables": [
+      "source.zip",
+      "exemple_pdf_genere.pdf",
+      "regions.conf"
+    ]
+  },
+  {
+    "title": "Gérer des données de l'information",
+    "subtitle": "SAE 1.04: Création d'une base de donnée",
+    "options": {
+      "school_project": true,
+      "associated_with": 4
+    },
+    "steps": [
+      "Critique de la base de données existante + proposition d'un nouveau modèle",
+      "Répondre aux différentes requêtes (livrable sous forme de script SQL)\n",
+      "Extension de la base de données avec la partie \"\"Catégories et contacts\"\""
+    ],
+    "skills": [
+      {
+        "skill": "AC 14.01",
+        "label": "Mettre à jour et interroger une base de données relationnelle."
+      },
+      {
+        "skill": "AC 14.03",
+        "label": "Concevoir une base de données relationnelle à partir d'un cahier des charges."
+      }
+    ],
+    "path": "sae/104",
+    "screens": [
+      {
+        "legend": "Diagramme de classe",
+        "src": "diagramme.png"
+      },
+      {
+        "legend": "Fichier SQL",
+        "src": "script.png"
+      }
+    ],
+    "deliverables": [
+      "diagrame_de_classe.pdf",
+      "script.sql"
+    ]
+  },
+  {
+    "title": "Création d'un site d'association sportif",
+    "subtitle": "SAE 1.05 Recueil des besoins",
+    "options": {
+      "school_project": true,
+      "associated_with": 5
+    },
+    "steps": [
+      "Organisation d'équipe : répartition du travail, rôles",
+      "Compréhension et rédaction des besoins",
+      "Réalisation de l'arborescence",
+      "Création de la charte graphique",
+      "Maquettage",
+      "Programmation avec outil de versioning",
+      "Présentation orale en équipe"
+    ],
+    "skills": [
+      {
+        "skill": "AC 15.01",
+        "label": "Appréhender les besoins du client et de l’utilisateur."
+      },
+      {
+        "skill": "AC 15.02",
+        "label": "Mettre en place les outils de gestion de projet - Utiliser un outil collaboratif."
+      },
+      {
+        "skill": "AC 15.03",
+        "label": "Identifier les acteurs et les différentes phases d'un cycle de développement."
+      }
+    ],
+    "path": "sae/105",
+    "screens": [
+      {
+        "legend": "Site internet",
+        "src": "site_web.png"
+      },
+      {
+        "legend": "Maquette web",
+        "src": "maquette.png"
+      },
+      {
+        "legend": "Charte graphique",
+        "src": "charte_graphique.png"
+      },
+      {
+        "legend": "Arborescence",
+        "src": "arborescence.jpg"
+      },
+      {
+        "legend": "Expression du besoin client",
+        "src": "expression_des_besoins.png"
+      }
+    ],
+    "deliverables": [
+      "site_web.zip",
+      "charte_graphique.pdf",
+      "arborescence.jpg",
+      "expression_des_besoins.pdf"
+    ]
+  },
+  {
+    "title": "Rapport RSE",
+    "subtitle": "SAE 1.06: Environnement économique",
+    "options": {
+      "school_project": true,
+      "associated_with": 6
+    },
+    "steps": [
+      "Organiser le travail d'équipe à l'aide d'outils (fixer ses objectifs, partager des tâches et planifier le travail).",
+      "Organiser sa recherche documentaire sur une entreprise et mettre en place des outils de veille.",
+      "Préparer une synthèse écrite.",
+      "Présenter son travail à l'aide d'outils web (canva, prézi, genially).",
+      "Présenter son travail oralement individuellement et en équipe."
+    ],
+    "skills": [
+      {
+        "skill": "AC 16.01",
+        "label": "Appréhender l'écosystème numérique"
+      }
+    ],
+    "path": "sae/106",
+    "screens": [
+      {
+        "legend": "Compte rendu",
+        "src": "maquette.png"
+      },
+      {
+        "legend": "Diaporama",
+        "src": "maquette.png"
+      }
+    ],
+    "deliverables": [
+      "comtpe_rendu.pdf",
+      "diaporama.pdf"
+    ]
+  },
+  {
+    "title": "Création d'un robot jouant au puissance 4",
+    "subtitle": "SAE 1.02: Comparaison algorithmes",
+    "options": {
+      "school_project": true,
+      "associated_with": 2
+    },
+    "steps": [
+      "Tri de 10 entiers",
+      "Tri de 500 000 entiers",
+      "tris de chaines de caractères",
+      "Comparaison de performances",
+      "Données réelles",
+      "Évaluation individuelle"
+    ],
+    "skills": [
+      {
+        "skill": "AC 12.01",
+        "label": "Analyser un problème avec méthode (découpage\nen éléments algorithmiques simples, structure de\ndonnées...)."
+      },
+      {
+        "skill": "AC 12.02",
+        "label": "Comparer des algorithmes pour des problèmes\nclassiques (tris simples, recherche...)."
+      }
+    ],
+    "path": "sae/102",
+    "screens": [
+      {
+        "legend": "Résultat des algorithmes",
+        "src": "maquette.png"
+      }
+    ],
+    "deliverables": [
+      "code_source.zip"
+    ]
+  }
+]
