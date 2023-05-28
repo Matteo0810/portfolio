@@ -103,12 +103,27 @@
     justify-content: center;
 
     &>section {
+      margin-right: -8em;
+
       &>article {
         background-color: $color--gray;
         border-radius: $radius--variation--1;
 
         margin: 2em 0;
         padding: 1.5em 2.5em;
+        position: relative;
+
+        &>h5 {
+          display: none;
+          position: absolute;
+          top: -1em;
+          left: 0;
+
+          background-color: $color--black;
+          border-radius: $radius--default;
+          color: $color--white;
+          padding: .5em 1em;
+        }
 
         &>ul {
           margin: 1em 1.5em 2em;

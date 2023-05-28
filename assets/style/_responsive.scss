@@ -1,0 +1,116 @@
+@import "utils/variables";
+
+@media screen and (max-width: 1175px) {
+  #projects > section > article {
+    width: 28em;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  #projects > section {
+    grid-template-columns: 1fr;
+    &>article {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 944px) {
+  #formation>section>section>article {
+    width: 35em;
+  }
+}
+
+@media screen and (max-width: 933px) {
+  #project-details > div {
+    flex-wrap: wrap !important;
+    flex-direction: column-reverse !important;
+
+    &>.carousel {
+      margin-bottom: 3em;
+
+      &>img {
+        width: 100%;
+        height: 27em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 867px) {
+  #home > section#competences > section > section:first-of-type {
+    margin-right: unset;
+  }
+}
+
+@media screen and (max-width: 774px) {
+  #formation>section>section>article {
+    width: 28em;
+
+    &>h2 {
+      font-size: $font--size--20;
+    }
+    &>h3 {
+      font-size: $font--size--16;
+    }
+
+    &>ul {
+      margin: 1em 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  // todo responsive du header à ce moment-là
+}
+
+@media screen and (max-width: 740px) {
+  aside#contact>nav>ul {
+    display: grid !important;
+    align-items: center !important;
+    justify-items: center !important;
+
+    &>li {
+      margin: 1em 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 649px) {
+  #formation>section {
+
+
+    &>.periods {
+      display: none;
+    }
+
+    &>section {
+      margin-right: unset !important;
+
+      &>article {
+        width: 100%;
+        &>h5 {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 477px) {
+  #project-details > div {
+    margin: 11em 1em;
+
+    &> .carousel > img {
+      height: 13em;
+      width: 21em;
+    }
+  }
+}
+
+@media screen and (max-width: 444px) {
+  #formation>section>section>article>a:first-of-type {
+    margin-bottom: .5em;
+  }
+}

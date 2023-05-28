@@ -18,6 +18,7 @@ function createTmpAnimationElement(animationType) {
 
 function openProjectDetails(projectData) {
     const tmpElement = createTmpAnimationElement("open");
+    document.body.style.overflow = "hidden";
     setTimeout( () => {
         document.body.removeChild(tmpElement);
         document.body.insertAdjacentHTML("beforeend", getProjectHTMLString(projectData));
@@ -42,6 +43,7 @@ function initProjectDetailsCarousel() {
 
 function closeProjectDetails() {
     document.getElementById("project-details").remove();
+    document.body.style.overflow = "visible";
     const tmpElement = createTmpAnimationElement("close");
     setTimeout(() => document.body.removeChild(tmpElement), ANIMATION_TIME*1.5);
 }
@@ -77,19 +79,21 @@ function getProjectHTMLString(project) {
                         ).join('')}
                     </ul>
         
-                    <h3>Livrables</h3>
-                    <ul>
-                        ${project.deliverables.map(deliverable => 
-                          `<li>
-                               <a href="assets/data/${project.path}/deliverables/${deliverable}" download="${deliverable}">
-                                   <button>
-                                        ${deliverable} 
-                                        <span class="icon download-reversed"></span>
-                                    </button>
-                               </a>
-                          </li>`  
-                        ).join('')}
-                    </ul>
+                    ${project.deliverables.length > 0 ? `
+                        <h3>Livrables</h3>
+                        <ul>
+                            ${project.deliverables.map(deliverable => 
+                              `<li>
+                                   <a href="assets/data/${project.path}/deliverables/${deliverable}" download="${deliverable}">
+                                       <button>
+                                            ${deliverable} 
+                                            <span class="icon download-reversed"></span>
+                                        </button>
+                                   </a>
+                              </li>
+                              `).join('')}
+                        </ul>`
+                    : ''}
                 </article>
                 <div class="carousel">
                     <img src="assets/data/${project.path}/screens/${currentScreen.src}" alt="${currentScreen.legend}">

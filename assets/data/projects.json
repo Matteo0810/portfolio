@@ -277,18 +277,11 @@
     "path": "sae/106",
     "screens": [
       {
-        "legend": "Compte rendu",
-        "src": "maquette.png"
-      },
-      {
-        "legend": "Diaporama",
-        "src": "maquette.png"
+        "legend": "Extrait: Caractéristiques de l'entreprise",
+        "src": "caracteristiques.png"
       }
     ],
-    "deliverables": [
-      "comtpe_rendu.pdf",
-      "diaporama.pdf"
-    ]
+    "deliverables": []
   },
   {
     "title": "Création d'un robot jouant au puissance 4",

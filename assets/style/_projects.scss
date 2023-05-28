@@ -52,9 +52,12 @@
   background-color: $color--black;
   width: 100%;
 
-  position: absolute;
+  position:fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
   top: 0;
-  left: 0;
+  bottom: 0;
 
   z-index: 99;
 
@@ -133,6 +136,7 @@
       &>img {
         width: 35em;
         height: 22em;
+        object-fit: contain;
       }
 
       &>div {
@@ -216,10 +220,10 @@
 
   &>section {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 
-    margin: 0 10em 3em;
+    margin-bottom: 1em;
 
     &>article {
       background-color: $color--gray;
@@ -227,6 +231,7 @@
       position: relative;
 
       margin: 1em;
+      width: 35em;
 
       padding: 1em 2em 4em;
 

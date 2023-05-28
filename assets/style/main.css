@@ -317,11 +317,25 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
+#home > section#formation > section > section {
+  margin-right: -8em;
+}
 #home > section#formation > section > section > article {
   background-color: #F1F1F1;
   border-radius: 14px;
   margin: 2em 0;
   padding: 1.5em 2.5em;
+  position: relative;
+}
+#home > section#formation > section > section > article > h5 {
+  display: none;
+  position: absolute;
+  top: -1em;
+  left: 0;
+  background-color: #132834;
+  border-radius: 100px;
+  color: white;
+  padding: 0.5em 1em;
 }
 #home > section#formation > section > section > article > ul {
   margin: 1em 1.5em 2em;
@@ -529,9 +543,11 @@ footer {
 #project-details {
   background-color: #132834;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
   top: 0;
-  left: 0;
+  bottom: 0;
   z-index: 99;
 }
 #project-details > .close {
@@ -599,6 +615,8 @@ footer {
 #project-details > div > div > img {
   width: 35em;
   height: 22em;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #project-details > div > div > div {
   margin-top: 1em;
@@ -678,13 +696,15 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  margin: 0 10em 3em;
+  justify-items: center;
+  margin-bottom: 1em;
 }
 #projects > section > article {
   background-color: #F1F1F1;
   border-radius: 14px;
   position: relative;
   margin: 1em;
+  width: 35em;
   padding: 1em 2em 4em;
 }
 #projects > section > article > h4 {
@@ -695,4 +715,102 @@ footer {
   position: absolute;
   right: 1em;
   bottom: 1em;
+}
+
+@media screen and (max-width: 1175px) {
+  #projects > section > article {
+    width: 28em;
+  }
+}
+@media screen and (max-width: 954px) {
+  #projects > section {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  #projects > section > article {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 944px) {
+  #formation > section > section > article {
+    width: 35em;
+  }
+}
+@media screen and (max-width: 933px) {
+  #project-details > div {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  #project-details > div > .carousel {
+    margin-bottom: 3em;
+  }
+  #project-details > div > .carousel > img {
+    width: 100%;
+    height: 27em;
+  }
+}
+@media screen and (max-width: 867px) {
+  #home > section#competences > section > section:first-of-type {
+    margin-right: unset;
+  }
+}
+@media screen and (max-width: 774px) {
+  #formation > section > section > article {
+    width: 28em;
+  }
+  #formation > section > section > article > h2 {
+    font-size: 1.25em;
+  }
+  #formation > section > section > article > h3 {
+    font-size: 1em;
+  }
+  #formation > section > section > article > ul {
+    margin: 1em 0 !important;
+  }
+}
+@media screen and (max-width: 740px) {
+  aside#contact > nav > ul {
+    display: -ms-grid !important;
+    display: grid !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    justify-items: center !important;
+  }
+  aside#contact > nav > ul > li {
+    margin: 1em 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 649px) {
+  #formation > section > .periods {
+    display: none;
+  }
+  #formation > section > section {
+    margin-right: unset !important;
+  }
+  #formation > section > section > article {
+    width: 100%;
+  }
+  #formation > section > section > article > h5 {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 477px) {
+  #project-details > div {
+    margin: 11em 1em;
+  }
+  #project-details > div > .carousel > img {
+    height: 13em;
+    width: 21em;
+  }
+}
+@media screen and (max-width: 444px) {
+  #formation > section > section > article > a:first-of-type {
+    margin-bottom: 0.5em;
+  }
 }
