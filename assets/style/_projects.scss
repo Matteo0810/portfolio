@@ -133,10 +133,18 @@
         border-radius: $radius--variation--1;
       }
 
-      &>img {
-        width: 35em;
-        height: 22em;
-        object-fit: contain;
+      &>figure {
+        &>img {
+          width: 35em;
+          height: 22em;
+          object-fit: contain;
+          border: 1px solid $color--white;
+        }
+
+        &>figcaption {
+          margin-top: .5em;
+          text-align: center;
+        }
       }
 
       &>div {

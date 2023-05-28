@@ -612,11 +612,16 @@ footer {
      object-fit: cover;
   border-radius: 14px;
 }
-#project-details > div > div > img {
+#project-details > div > div > figure > img {
   width: 35em;
   height: 22em;
   -o-object-fit: contain;
      object-fit: contain;
+  border: 1px solid white;
+}
+#project-details > div > div > figure > figcaption {
+  margin-top: 0.5em;
+  text-align: center;
 }
 #project-details > div > div > div {
   margin-top: 1em;
@@ -804,7 +809,7 @@ footer {
   #project-details > div {
     margin: 11em 1em;
   }
-  #project-details > div > .carousel > img {
+  #project-details > div > .carousel > figure > img {
     height: 13em;
     width: 21em;
   }

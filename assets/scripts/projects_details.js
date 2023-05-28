@@ -30,13 +30,14 @@ function openProjectDetails(projectData) {
 
 function initProjectDetailsCarousel() {
     const carousel = document.querySelector("#project-details .carousel");
-    const actualImg = carousel.querySelector("img");
+    const actualImg = carousel.querySelector("figure>img");
     const thumbnails = carousel.querySelectorAll("div>img");
 
     for(const thumbnail of Array.from(thumbnails)) {
         thumbnail.onclick = () => {
             actualImg.src = thumbnail.src;
-            actualImg.title = thumbnail.title;
+            actualImg.alt = thumbnail.alt;
+            carousel.querySelector("figure>figcaption").textContent = thumbnail.alt;
         }
     }
 }
@@ -96,7 +97,12 @@ function getProjectHTMLString(project) {
                     : ''}
                 </article>
                 <div class="carousel">
-                    <img src="assets/data/${project.path}/screens/${currentScreen.src}" alt="${currentScreen.legend}">
+                    <figure>
+                        <img src="assets/data/${project.path}/screens/${currentScreen.src}" alt="${currentScreen.legend}">
+                        <figcaption>
+                            ${currentScreen.legend}
+                        </figcaption>
+                    </figure>
                     <div>
                         ${project.screens.map(({ legend, src }) =>
                             `<img src="assets/data/${project.path}/screens/${src}" alt="${legend}">`
