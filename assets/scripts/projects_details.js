@@ -61,6 +61,7 @@ function getProjectHTMLString(project) {
                 <article>
                     <h1>${project.title}</h1>
                     <h2>${project.subtitle}</h2>
+                    <p>${project.brief}</p>
         
                     <h3>Étapes de réalisation</h3>
                     <ul>

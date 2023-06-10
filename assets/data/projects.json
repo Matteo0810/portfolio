@@ -2,6 +2,7 @@
   {
     "title": "Puissance 4",
     "subtitle": "SAE 1.01: Implémentation",
+    "brief": "Le projet consiste à réaliser un puissance 4 fonctionnant dans un terminal en utilisant le langage de programmation C.",
     "options": {
       "school_project": true,
       "associated_with": 1
@@ -63,6 +64,7 @@
   {
     "title": "Problème du tour du cavalier",
     "subtitle": "SAE 2.02: Exploitation algorithmique",
+    "brief": "Le projet consiste résoudre le problème du cavalier (problème algorithmique où il faut que le cavalier passe sur toutes les cases sans repasser sur une case) en python.",
     "options": {
       "school_project": true,
       "associated_with": 2
@@ -111,6 +113,7 @@
   {
     "title": "Installation d’un poste pour le développement",
     "subtitle": "SAE 1.03: Installation d'un poste",
+    "brief": "Le projet consiste à réaliser une chaîne de création d'un PDF pour une région. C'est à dire qu'à partir d'un fichier où il y a des données sur la region le programme génère un PDF.",
     "options": {
       "school_project": true,
       "associated_with": 3
@@ -159,6 +162,7 @@
   {
     "title": "Gérer des données de l'information",
     "subtitle": "SAE 1.04: Création d'une base de donnée",
+    "brief": "Le projet consiste à concevoir et réaliser la base de donnée du festival des trans musicale de Rennes.",
     "options": {
       "school_project": true,
       "associated_with": 4
@@ -197,6 +201,7 @@
   {
     "title": "Création d'un site d'association sportif",
     "subtitle": "SAE 1.05 Recueil des besoins",
+    "brief": "Le projet consiste à réaliser un site web fictif pour l'association sportif SportKOH.",
     "options": {
       "school_project": true,
       "associated_with": 5
@@ -257,6 +262,7 @@
   {
     "title": "Rapport RSE",
     "subtitle": "SAE 1.06: Environnement économique",
+    "brief": "À partir d'une entreprise choisit par nos soins, il fallait présenter l'entreprise et expliquer son engagement RSE.",
     "options": {
       "school_project": true,
       "associated_with": 6
@@ -286,6 +292,7 @@
   {
     "title": "Création d'un robot jouant au puissance 4",
     "subtitle": "SAE 1.02: Comparaison algorithmes",
+    "brief": "Le projet consiste à réaliser un robot jouant au puissance 4 soit contre un joueur soit contre un autre robot.",
     "options": {
       "school_project": true,
       "associated_with": 2
@@ -311,12 +318,78 @@
     "path": "sae/102",
     "screens": [
       {
-        "legend": "Résultat des algorithmes",
-        "src": "maquette.png"
+        "legend": "Extrait du programme C",
+        "src": "programme.png"
+      },
+      {
+        "legend": "Classement par victoire des robots du groupe 1E1",
+        "src": "classement_par_victoire.png"
+      },
+      {
+        "legend": "Classement des robots du groupe 1E1 ",
+        "src": "classement.png"
       }
     ],
     "deliverables": [
-      "code_source.zip"
+      "programme.c"
+    ]
+  },
+  {
+    "title": "Evenement de team building",
+    "subtitle": "SAE 2.06: Travail d'équipe",
+    "brief": "Le projet consiste à choisir un èvenement de teambuilding pour une entreprise choisit et à le présenter aux membres du CSE de l'entreprise",
+    "options": {
+      "school_project": true,
+      "associated_with": 6
+    },
+    "steps": [
+      "Consitution des équipes et mise en place des outils de travail collaboratif",
+      "Choix d'une entreprise et étude de l'entreprise choisie",
+      "Analyse de l'événement avec méthode QQOQCCP",
+      "Organigramme des tâches de l'événement",
+      "Rédaction du rapport d'organisation de l'événement",
+      "Conception du flyer de l'événement",
+      "Réalisation du film évenementiel",
+      "Préparation de la présentation orale de l'événement (support visuel et exposé)"
+    ],
+    "skills": [
+      {
+        "skill": "AC 16.02",
+        "label": "Découvrir les aptitudes requises selon les différents secteurs d'activité"
+      },
+      {
+        "skill": "AC 16.03",
+        "label": "Identifier les statuts, les fonctions et les rôles de chaque membre de l'équipe pluridisciplinaire"
+      },
+      {
+        "skill": "AC 16.04",
+        "label": "Acquérir les compétences interpersonnelles pour travailler en équipe"
+      }
+    ],
+    "path": "sae/206",
+    "screens": [
+      {
+        "legend": "Orgnigramme des tâches",
+        "src": "ot.jpg"
+      },
+      {
+        "legend": "Extrait du flyer",
+        "src": "flyer.png"
+      },
+      {
+        "legend": "Extrait du compte rendu",
+        "src": "report.png"
+      },
+      {
+        "legend": "Extrait du diaporama",
+        "src": "diapo.png"
+      }
+    ],
+    "deliverables": [
+      "diapo.pdf",
+      "dossier.docx",
+      "flyer.pdf",
+      "ot.jpg"
     ]
   }
 ]

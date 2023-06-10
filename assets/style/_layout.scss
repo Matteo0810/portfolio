@@ -3,6 +3,16 @@
 header {
   height: 6em;
 
+  &>#responsive-button {
+    float: right;
+    margin: 2em;
+    display: none;
+  }
+
+  & #close-nav {
+    display: none;
+  }
+
   &>nav {
     &>ul {
       float: right;
