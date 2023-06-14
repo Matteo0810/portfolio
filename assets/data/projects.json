@@ -391,5 +391,51 @@
       "flyer.pdf",
       "ot.jpg"
     ]
+  },
+  {
+    "title": "Création d'une application",
+    "subtitle": "SAE 2.01: Développement d'application",
+    "brief": "Le programme consiste à crée une application avec JavaFX pour l'hôtel du cheval blanc.",
+    "options": {
+      "school_project": true,
+      "associated_with": 1
+    },
+    "steps": [
+      "Diagramme UML",
+      "Images écran de l'application",
+      "Le code de l'application"
+    ],
+    "skills": [
+      {
+        "skill": "AC 11.01",
+        "label": "Implémenter une application à partir de spécifications simples."
+      },
+      {
+        "skill": "AC 11.02",
+        "label": "Concevoir une application (à l'aide d'UML) à partir de spécifications simples."
+      },
+      {
+        "skill": "AC 11.03",
+        "label": "Evaluer une application (par rapport aux spécifications) par des tests."
+      },
+      {
+        "skill": "AC 11.04",
+        "label": "Réaliser des interfaces (IHM) utilisateurs."
+      }
+    ],
+    "path": "sae/201",
+    "screens": [
+      {
+        "legend": "Image de l'application",
+        "src": "application.png"
+      },
+      {
+        "legend": "Extrait du code source",
+        "src": "source.png"
+      }
+    ],
+    "deliverables": [
+      "source.zip"
+    ]
   }
 ]

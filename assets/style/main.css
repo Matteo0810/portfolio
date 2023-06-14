@@ -240,15 +240,19 @@ footer {
 }
 
 #home > .header > .shapes {
-  background-image: url(../shapes/top-shapes.svg);
-  background-size: cover;
-  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 120%;
   z-index: -1;
+  background-image: url("../shapes/top-shapes.svg");
+  background-size: cover;
+  background-position: center;
+}
+#home > .header > .shapes > svg {
+  position: absolute;
+  width: 100%;
 }
 #home > .header > .center {
   display: -ms-grid;
@@ -283,8 +287,12 @@ footer {
   font-family: "prozalibre-regular", sans-serif;
   margin-bottom: 1em;
 }
-#home > .header > .center > aside > a > button {
+#home > .header > .center > aside > a {
   margin: 0 auto;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #home > section > h1,
